@@ -86,6 +86,6 @@ func main() {
 	close(results)
 
 	fmt.Printf("Successes\t%d\n", *n-failures)
-	fmt.Printf("Failures (5xx)\t%d\n", failures)
+	fmt.Printf("Failures\t%d\n", failures)
 	fmt.Printf("Request Time (s) (Min, Max, Mean): %.3f, %.3f, %.3f\n", slices.Min(requestTimes), slices.Max(requestTimes), mean(requestTimes))
 }
