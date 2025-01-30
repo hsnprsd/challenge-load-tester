@@ -55,7 +55,7 @@ func main() {
 	method := flag.String("method", "", "HTTP Method")
 	expect := flag.Int("expect", 200, "Expected status code")
 	n := flag.Int("n", 10, "Number of requests")
-	c := flag.Int("c", 10, "Number of concurrect requests")
+	c := flag.Int("c", 1, "Number of concurrect requests")
 
 	flag.Parse()
 
